@@ -382,6 +382,10 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -454,16 +458,7 @@ a {
   display: flex;
 }
 
-@media screen and (max-width: 1199.98px) {
-  .clients-list {
-    flex-wrap: wrap;
-    justify-content: start;
-    background-color: aquamarine;
-  }
-}
-
-.clients-list__item {
-  background-color: tomato;
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,56 +467,6 @@ a {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .clients-list__item {
-    flex-basis: calc((100%-30px * 2) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients-list__item {
-    flex-basis: calc(100%-30px * 3 / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .clients-list__item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .clients-list__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients-list__item:nth-child(3n) {
-    margin-right: 0;
-  }
-  .clients-list__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
-}
-
-.clients-list__link {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .clients-list__link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list__link {
-    width: 170px;
-  }
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
@@ -534,10 +479,8 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
-  .clients-list__item:not(:last-child) {
-    margin-right: 30px;
-  }
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .clients-list__link:hover .clients-list__icon,
@@ -549,6 +492,18 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-bg-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .join {
@@ -579,15 +534,37 @@ a {
   margin-top: 9px;
 }
 
-.our-contacts {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .our-contacts {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-contacts {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .social-networks {
-  margin-left: 70px;
-  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-networks {
+    margin-left: 70px;
+    padding-top: 15px;
+  }
 }
 
 .social-networks__list {
@@ -618,13 +595,21 @@ a {
   fill: var(--white-bg-color);
 }
 
-.subscribe {
-  margin-left: 94px;
-  padding-top: 15px;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 70px;
+    padding-top: 15px;
+  }
 }
 
 .subs-form {
   display: flex;
+}
+
+@media screen and (max-width: 1199.99px) {
+  .subs-form {
+    flex-direction: column;
+  }
 }
 
 .subs-form__input {
@@ -632,7 +617,7 @@ a {
   padding-bottom: 15px;
   padding-top: 15px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -640,6 +625,12 @@ a {
   color: var(--background-text-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subs-form__input {
+    width: 358px;
+  }
 }
 
 .button--subs {
