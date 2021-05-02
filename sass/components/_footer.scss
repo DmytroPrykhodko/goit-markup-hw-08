@@ -5,17 +5,16 @@
 }
 
 .footer__info {
-  @media screen and (max-width: 767.98px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  @media screen and(max-width: 767.98px) {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
+    text-align: center;
   }
-  @media screen and (max-width: 1199.98px) {
+
+  @media screen and (min-width: 768px) and(max-width: 1199.98px) {
+    width: 50%;
+    text-align: center;
   }
 }
 
@@ -57,20 +56,23 @@
   @media screen and(min-width: 480px) {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+
     justify-content: space-between;
   }
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 768px) and(max-width: 1199.98px) {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   @media screen and(min-width: 1200px) {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -80,16 +82,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
 
   @media screen and(max-width: 767.98px) {
     margin-bottom: 60px;
   }
 
-  @media screen and(min-width: 1200px) {
-    margin-left: 70px;
-    padding-top: 15px;
+  @media screen and(min-width: 768px) and(max-width: 1199.98px) {
+    width: 50%;
+    text-align: center;
   }
 }
 
@@ -124,8 +124,15 @@
 .subscribe {
   text-align: center;
 
+  @media screen and(min-width: 768px) and(max-width: 1199.98px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+
   @media screen and(min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 15px;
   }
 }
@@ -133,7 +140,7 @@
 .subs-form {
   display: flex;
 
-  @media screen and(max-width: 767.98px) {
+  @media screen and(max-width: 1199.98px) {
     flex-direction: column;
 
     text-align: center;
@@ -143,6 +150,7 @@
 .subs-form__input {
   width: 100%;
   margin-bottom: 20px;
+  padding-left: 16px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -151,18 +159,19 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
+  @media screen and(min-width: 768px) and(max-width: 1199.98px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+  }
+
   @media screen and(min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    margin-bottom: 0;
     padding-top: 15px;
-    padding-left: 16px;
+    padding-bottom: 15px;
   }
-}
-
-.subs-form__input::placeholder {
-  padding-left: 16px;
 }
 
 .button--subs {

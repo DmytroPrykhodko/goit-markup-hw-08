@@ -557,14 +557,17 @@ a {
 
 @media screen and (max-width: 767.98px) {
   .footer__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__info {
+    width: 50%;
+    text-align: center;
   }
 }
 
@@ -605,24 +608,26 @@ a {
   .our-contacts {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .our-contacts {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .our-contacts {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -632,8 +637,6 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -642,10 +645,10 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .social-networks {
-    margin-left: 70px;
-    padding-top: 15px;
+    width: 50%;
+    text-align: center;
   }
 }
 
@@ -681,9 +684,18 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .subscribe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe {
-    margin-left: 70px;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 15px;
   }
 }
@@ -692,7 +704,7 @@ a {
   display: flex;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .subs-form {
     flex-direction: column;
     text-align: center;
@@ -702,6 +714,7 @@ a {
 .subs-form__input {
   width: 100%;
   margin-bottom: 20px;
+  padding-left: 16px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -711,19 +724,22 @@ a {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .subs-form__input {
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subs-form__input {
     width: 358px;
     margin-right: 12px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    margin-bottom: 0;
     padding-top: 15px;
-    padding-left: 16px;
+    padding-bottom: 15px;
   }
-}
-
-.subs-form__input::placeholder {
-  padding-left: 16px;
 }
 
 .button--subs {
