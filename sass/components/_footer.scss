@@ -5,7 +5,7 @@
 }
 
 .footer__info {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767.98px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,7 +83,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and(min-width: 480px) {
+  @media screen and(max-width: 767.98px) {
     margin-bottom: 60px;
   }
 
@@ -133,7 +133,7 @@
 .subs-form {
   display: flex;
 
-  @media screen and(min-width: 480px) {
+  @media screen and(max-width: 767.98px) {
     flex-direction: column;
 
     text-align: center;

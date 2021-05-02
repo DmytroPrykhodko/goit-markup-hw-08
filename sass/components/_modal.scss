@@ -20,8 +20,8 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+
   left: 50%;
   top: 50%;
 
@@ -33,7 +33,16 @@
   border-radius: 4px;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
+
+// body.modal-open {
+//   overflow: hidden;
+// }
 
 .button--close {
   position: absolute;
