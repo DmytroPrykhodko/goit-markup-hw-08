@@ -5,7 +5,7 @@
 }
 
 .footer__info {
-  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+  @media screen and (min-width: 480px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,6 +13,7 @@
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 60px;
   }
   @media screen and (max-width: 1199.98px) {
   }
@@ -24,6 +25,11 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--background-text-color);
+}
+
+.join--subs {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .address {
@@ -48,6 +54,13 @@
 }
 
 .our-contacts {
+  @media screen and(min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
   @media screen and(min-width: 768px) {
     display: flex;
     align-items: baseline;
@@ -69,6 +82,10 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and(min-width: 480px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and(min-width: 1200px) {
     margin-left: 70px;
@@ -105,6 +122,8 @@
 }
 
 .subscribe {
+  text-align: center;
+
   @media screen and(min-width: 1200px) {
     margin-left: 70px;
     padding-top: 15px;
@@ -114,18 +133,16 @@
 .subs-form {
   display: flex;
 
-  @media screen and(max-width: 1199.99px) {
+  @media screen and(min-width: 480px) {
     flex-direction: column;
+
+    text-align: center;
   }
 }
 
 .subs-form__input {
-  margin-right: 12px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-left: 16px;
-
   width: 100%;
+  margin-bottom: 20px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -136,12 +153,24 @@
 
   @media screen and(min-width: 1200px) {
     width: 358px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 16px;
   }
+}
+
+.subs-form__input::placeholder {
+  padding-left: 16px;
 }
 
 .button--subs {
   display: flex;
   align-items: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subs-form__icon {

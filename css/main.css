@@ -84,6 +84,7 @@ a {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -494,7 +495,7 @@ a {
   background-color: var(--dark-bg-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
+@media screen and (min-width: 480px) {
   .footer__info {
     display: flex;
     flex-direction: column;
@@ -503,6 +504,7 @@ a {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 60px;
   }
 }
 
@@ -512,6 +514,11 @@ a {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--background-text-color);
+}
+
+.join--subs {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .address {
@@ -532,6 +539,15 @@ a {
 
 .address__item {
   margin-top: 9px;
+}
+
+@media screen and (min-width: 480px) {
+  .our-contacts {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -558,6 +574,12 @@ a {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .social-networks {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -595,6 +617,10 @@ a {
   fill: var(--white-bg-color);
 }
 
+.subscribe {
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: 70px;
@@ -606,18 +632,16 @@ a {
   display: flex;
 }
 
-@media screen and (max-width: 1199.99px) {
+@media screen and (min-width: 480px) {
   .subs-form {
     flex-direction: column;
+    text-align: center;
   }
 }
 
 .subs-form__input {
-  margin-right: 12px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-left: 16px;
   width: 100%;
+  margin-bottom: 20px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -630,12 +654,24 @@ a {
 @media screen and (min-width: 1200px) {
   .subs-form__input {
     width: 358px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 16px;
   }
+}
+
+.subs-form__input::placeholder {
+  padding-left: 16px;
 }
 
 .button--subs {
   display: flex;
   align-items: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subs-form__icon {
