@@ -2,6 +2,7 @@
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
+
   @media screen and(min-width:768px) {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -22,7 +23,12 @@
 .logo--footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
+
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
