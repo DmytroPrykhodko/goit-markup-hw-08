@@ -26,4 +26,8 @@
   margin-bottom: 30px;
 
   @extend %uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
