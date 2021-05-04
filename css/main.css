@@ -85,7 +85,6 @@ a {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -1317,7 +1316,6 @@ textarea:placeholder-shown {
 }
 
 .portfolio__footer {
-  border: 1px solid #eeeeee;
   padding: 20px 24px 20px 20px;
 }
 
